@@ -92,10 +92,10 @@ function initSearch(api_key, value, type) {
   displayLoader(true);
   displayMessage(false);
   if(type === "search") {
-    url = "http://api.giphy.com/v1/gifs/" + type + "?q=" + encodeInputValue(value) + "&api_key=" + api_key;
+    url = "https://api.giphy.com/v1/gifs/" + type + "?q=" + encodeInputValue(value) + "&api_key=" + api_key;
     loadGifs(url, type)
   } else if(type === "random") {
-    url = "http://api.giphy.com/v1/gifs/" + type + "?tag=" + encodeInputValue(value) + "&api_key=" + api_key;
+    url = "https://api.giphy.com/v1/gifs/" + type + "?tag=" + encodeInputValue(value) + "&api_key=" + api_key;
     loadGifs(url, type)
   } 
 }
